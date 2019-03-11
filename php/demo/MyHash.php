@@ -50,7 +50,7 @@ class ConsistentHash {
             $this->_layze_sorted = TRUE;
         }
 
-        $hash = myHash($key);
+        $hash = $this->myHash($key);
         $len  = sizeof($this->_server_list);
         if ($len == 0) {
             return FALSE;
